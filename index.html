@@ -19,21 +19,22 @@
   </head>
   <body>
     <!-- HEADER -->
-    <header class="page-header section">
-      <div class="container">
+    <header class="page-header">
+      <div class="header-main container">
         <div class="header-logo-wrapper">
           <a class="logo" href="./index.html"
             >Web<span class="logo-part">Studio</span></a
           >
-          <button class="menu-btn-open" type="button">
+          <button class="menu-btn-open js-open-menu" type="button"  aria-expanded="false"
+aria-controls="mobile-menu">
             <svg class="btn-open-img" width="24" height="24">
               <use href="./images/icons.svg#icon-heroicons-solid"></use>
             </svg>
           </button>
         </div>
 
-        <div class="menu-window">
-          <button class="menu-btn-close" type="button">
+        <div class="menu-window js-menu-container">
+          <button class="menu-btn-close js-close-menu"" type="button">
             <svg class="btn-close-img" width="8" height="8">
               <use href="./images/icons.svg#icon-close-black"></use>
             </svg>
@@ -67,31 +68,31 @@
               </li>
             </ul>
           </address>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a href="./index.html" class="footer-social-link">
-                <svg class="footer-social-img" width="24" height="24">
+          <ul class="header-social-list">
+            <li class="header-social-item">
+              <a href="./index.html" class="header-social-link">
+                <svg class="header-social-img" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="./index.html" class="footer-social-link">
-                <svg class="footer-social-img" width="24" height="24">
+            <li class="header-social-item">
+              <a href="./index.html" class="header-social-link">
+                <svg class="header-social-img" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="./index.html" class="footer-social-link">
-                <svg class="footer-social-img" width="24" height="24">
+            <li class="header-social-item">
+              <a href="./index.html" class="header-social-link">
+                <svg class="header-social-img" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="footer-social-item">
-              <a href="./index.html" class="footer-social-link">
-                <svg class="footer-social-img" width="24" height="24">
+            <li class="header-social-item">
+              <a href="./index.html" class="header-social-link">
+                <svg class="header-social-img" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
@@ -105,7 +106,7 @@
       <!-- SECTION HERO (WITH BUTTON) -->
       <section class="hero section">
         <div class="container">
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <h1 class="main-title">Effective Solutions For Your Business</h1>
           <button data-modal-open class="order-button" type="button">
             Order Service
           </button>
@@ -178,6 +179,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/team/photo-1.jpg 1x, ./images/team/photo-1r.jpg 2x"
                 src="./images/team/photo-1.jpg"
                 alt="Photo"
                 width="264"
@@ -220,6 +222,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/team/photo-2.jpg 1x, ./images/team/photo-2r.jpg 2x"
                 src="./images/team/photo-2.jpg"
                 alt="Photo"
                 width="264"
@@ -262,6 +265,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/team/photo-3.jpg 1x, ./images/team/photo-3r.jpg 2x"
                 src="./images/team/photo-3.jpg"
                 alt="Photo"
                 width="264"
@@ -304,6 +308,7 @@
             <li class="team-list-item">
               <img
                 class="team-list-img"
+                srcset="./images/team/photo-4.jpg 1x, ./images/team/photo-4r.jpg 2x"
                 src="./images/team/photo-4.jpg"
                 alt="Photo"
                 width="264"
@@ -636,5 +641,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/mobil-menu.js"></script>
   </body>
 </html>
