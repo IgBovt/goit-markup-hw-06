@@ -31,7 +31,6 @@ a {
 .section {
     margin: 0 auto;
     padding: 96px 0;
-    max-width: 320px;
 }
 body {
     font-family: 'Raleway', sans-serif;
@@ -52,6 +51,11 @@ body {
     margin-right: auto;
     overflow-x: hidden;
 }
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
 .visually-hidden {
     position: absolute;
     width: 1px;
@@ -69,6 +73,11 @@ body {
     max-width: 320px;
     margin-right: auto;
     margin-left: auto;
+}
+@media screen and (min-width: 768px) {
+    .page-header {
+        max-width: 768px;
+    }
 }
 .header-main {
     justify-content: space-between;
@@ -101,6 +110,15 @@ body {
     cursor: pointer;
     display: block;
 }
+@media screen and (min-width: 768px) {
+    .menu-btn-open {
+        display: none;
+    }
+    .menu-window {
+        
+    }
+}
+
 .btn-open-img {
     fill: var(--navy-blue);
 }
