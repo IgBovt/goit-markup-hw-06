@@ -734,6 +734,19 @@ body {
 .portfolio-overlay-text {
     display: none;
 }
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+}
+    .portfolio-list-item {  
+        max-width: calc((100% - 24px) / 2);
+}
+}
 
 /********  FOOTER ***********/
 /********  FOOTER ***********/
