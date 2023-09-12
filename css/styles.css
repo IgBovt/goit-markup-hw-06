@@ -906,6 +906,46 @@ gap: 16px;
 .footer-form-icon {
     margin-left: 16px;
 }
+@media screen and (min-width: 768px) {
+    .page-footer .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        align-items: start;
+    }
+    .footer-logo-wrapper {
+        max-width: 264px;
+        text-align-last: left;
+    }
+    .footer-logo-wrapper .logo {
+        margin-left: -150px;
+    }
+    .page-footer-text {
+        text-align: justify;
+    }
+    .footer-social-wrapper {
+        max-width: 208px;
+    }
+    .footer-text {
+        margin-left: -100px;
+    }
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        justify-content: start;
+        padding: 0;
+    }
+    .footer-form-text {
+        display: block;
+        text-align: left;
+        margin-top: 72px;
+        margin-left: -400px;
+    }
+    
+}
 
 
 
