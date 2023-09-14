@@ -261,6 +261,9 @@ img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.header-nav {
+    display: none;
+}
 /* FOR TABLET */
 @media screen and (min-width: 768px) {
     .menu-btn-close {
@@ -278,51 +281,60 @@ img {
     position: relative;
 }
 .menu-window {
-    display: flex;
-    flex-grow: 2;
-    justify-content: space-between;
-    align-items: center;
+    display: none;
 }
 .header-logo-wrapper {
     margin-right: 120px;
 }
-.nav-list {
+.header-nav {
+    display: flex;
+    flex-grow: 2;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-nav-list {
     display: flex;
     gap: 40px;
-    align-items: center;
+    
 }
-.nav-list-item {
-    padding: 24px 0;
-}
-.nav-list-link {
-    position: relative;
-    padding: 24px 0;
-    font-weight: 500;
+.header-nav-link {
+    color: #2E2F42;
     font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+
 }
-.nav-current-link {
+.current-nav-link {
+    color: #404BBF;
+        position: relative;
+}
+.current-nav-link::after {
+    content: '';
     position: absolute;
     left: 0;
-    bottom: 0;
-    display: block;
-    content: '';
-    width: 100%;
+    bottom: -16px;
     height: 4px;
-    background-color: var(--link-hover-color);
-    border-radius: 2px;
+    width: 48px;
+    background-color: #404bbf; 
+    border-radius: 2px; 
+    display: block;
 }
-.contacts-list-item {
-    margin-bottom: 12px;
+.header-address-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
-.contacts-list-item:last-child {
-    margin-bottom: 12px;
-}
-.contacts-list-link {
-    font-weight: 400;
+.header-address-link {
+    color:  #434455;
     font-size: 12px;
-    line-height: 1.17;
-    letter-spacing: 0.04em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.48px;
 }
+
 }
 
 
@@ -603,8 +615,6 @@ img {
     background-color: #404BBF;
 }
 
-/* FOR TABLET */
-
 
 /********** ABOUT US ***********/
 /********** ABOUT US ***********/
@@ -634,7 +644,22 @@ img {
     text-align: left;
 }
 /* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .about-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 72px 24px;
+}
+    .about-list-item {
+        margin-bottom: 0px;
+        max-width: calc((100% - 24px) / 2);
+}
+.about-title {
+    text-align: left;
+}
 
+}
 
 /********** TEAM ***********/
 /********** TEAM ***********/
