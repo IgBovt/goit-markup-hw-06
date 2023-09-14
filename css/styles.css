@@ -923,3 +923,46 @@ letter-spacing: 0.32px;
     margin-left: 16px;
 }
 /* FOR TABLET */
+@media screen and (min-width: 768px) {
+    .footer-box {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 552px;
+    }
+    .footer-logo-wrapper {
+        margin-right: 24px;
+    }
+    .footer-logo-wrapper .logo {
+        text-align: left;
+    }
+    .footer-text {
+        text-align: left;
+    }
+    .footer-form-wrapper {
+        max-width: 453px;
+    }
+    /* .footer-social-wrapper {
+        margin: 0;
+    } */
+    .footer-form-text {
+        text-align: left;
+    }
+    .footer-form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-form-button {
+        margin: 0;
+    }
+    .footer-mail-input {
+        min-width: 264px;
+    } 
+    .footer-mail-label {
+        margin-right: 24px;
+    }
+    .footer-form {
+        padding-top: 16px;
+    }
+} 
