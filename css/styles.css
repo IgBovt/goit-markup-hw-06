@@ -731,7 +731,20 @@ img {
 .networks-list-img {
     fill: var(--our-team-icons);
 }
-/* FOR TABLET */
+/* FOR TABLET TEAM */
+@media screen and (min-width: 768px) {
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 64px 24px;
+    }
+    .team-list-item {
+        margin: 0;
+        max-width: calc((100% - 24px) / 2);
+    }
+}
 
 /********** PORTFOLIO ***********/
 /********** PORTFOLIO ***********/
@@ -777,8 +790,24 @@ font-weight: 400;
 line-height: 24px; 
 letter-spacing: 0.32px;
 }
-/* FOR TABLET */
+/* FOR TABLET  PORTFOLIO*/
+@media screen and (min-width: 768px) {
+    .portfolio-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 72px 24px;
+        justify-content: space-between;
+    }
+    .portfolio-list-item {
+        margin: 0;
+        max-width: calc((100% - 24px) / 2);
+    }
+    .portfolio-list-img {
+    width: 356px;
+}
 
+}
 
 /* ******  FOOTER *********** */
 /* ******  FOOTER *********** */
